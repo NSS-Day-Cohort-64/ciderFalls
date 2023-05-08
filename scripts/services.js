@@ -4,17 +4,18 @@ const services = getServices()
 const areaServices = getAreaServices()
 const areas = getAreas()
 
+
 export const areaServicesList = () => {
-    let servicesHTML = `<span>Park Services:</span>`
-    let answer = []
+    let servicesHTML = `<span>Park Services:</span>`;
+    let isFirst = true;
     for (const service of services) {
-        servicesHTML += `<span data-type="services" data-id="${service.id}" data-name="${service.service}"> ${service.service}</span>`
+        const comma = isFirst ? '' : ',';
+        servicesHTML += `<span data-type="services" data-id="${service.id}" data-name="${service.service}">${comma} ${service.service}</span>`;
+        isFirst = false;
     }
-
-    
-    return servicesHTML
-}
-
+    servicesHTML += "."
+    return servicesHTML;
+};
 
 document.addEventListener(
     "click",
