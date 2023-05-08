@@ -29,23 +29,25 @@ const database = {
         { id: 27, name: "Benjamin Lee", areaId: 3 },
         { id: 28, name: "Grace Yang", areaId: 4 },
         { id: 29, name: "Mason Kim", areaId: 5 },
-        { id: 30, name: "Lily Chen", areaId: 6 }
+        { id: 30, name: "Lily Chen", areaId: 6 },
+        { id: 31, name: "Muhammad", areaId: 1 },
+        { id: 32, name: "Jesus Christ of Nazareth", areaId: 1 }
     ],
     services: [
-        { id: 1, service: "rafting" },
-        { id: 2, service: "canoeing" },
-        { id: 3, service: "fishing" },
-        { id: 4, service: "hiking" },
-        { id: 5, service: "picnicking" },
-        { id: 6, service: "rock climbing" },
-        { id: 7, service: "lodging" },
-        { id: 8, service: "parking" },
-        { id: 9, service: "information" },
-        { id: 12, service: "zip lining" },
+        { id: 1, service: "Rafting" },
+        { id: 2, service: "Canoeing" },
+        { id: 3, service: "Fishing" },
+        { id: 4, service: "Hiking" },
+        { id: 5, service: "Picnicking" },
+        { id: 6, service: "Rock Climbing" },
+        { id: 7, service: "Lodging" },
+        { id: 8, service: "Parking" },
+        { id: 9, service: "Information" },
+        { id: 12, service: "Zip Lining" },
     ],
 
     areas: [
-        { id: 1, section: "Northeast", trailName: "Chamfor River" },
+        { id: 1, section: "Northeast", trailName: "Chamfort River" },
         { id: 2, section: "Northern", trailName: "Lost Wolf Hiking Trail" },
         { id: 3, section: "Northwest", trailName: "Lodge" },
         { id: 4, section: "Southwest", trailName: "Gander River" },
@@ -72,4 +74,17 @@ const database = {
         { id: 17, areaId: 6, servicesId: 5 },
         { id: 18, areaId: 6, servicesId: 12 },
     ]
-} 
+}
+
+export const getGuests = () => {
+    return database.guests.map(guest => ({ ...guest }))
+}
+export const getServices = () => {
+    return database.services.map(service => ({ ...service }))
+}
+export const getAreas = () => {
+    return database.areas.map(area => ({ ...area }))
+}
+export const getAreaServices = () => {
+    return database.areaServices.map(areaService => ({ ...areaService }))
+}
