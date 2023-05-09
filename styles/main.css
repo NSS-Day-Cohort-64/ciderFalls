@@ -5,6 +5,11 @@
   justify-content: space-evenly;
   float: left;
 }
+body {
+  background-image: url("https://static.euronews.com/articles/stories/04/77/19/06/1440x810_cmsv2_185f2b76-2e76-5b1a-955d-c4619b3430ef-4771906.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 .area {
   width: 75px;
@@ -13,7 +18,17 @@
   margin-bottom: 40px;
   margin-right: 10px;
   flex-basis: 30%;
-  border: 3px solid red;
+  padding-bottom: 120px;
+  padding-left: 30px;
+  padding-right: 30px;
+  text-align: center;
+  padding-top: 15px;
+  list-style-type: none;
+  border: 25px solid black;
+  background-color: #e7f1f9;
+  font-family: "Monoton", cursive;
+  border-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='75' height='75'%3E%3Cg fill='none' stroke='%23B88846' stroke-width='2'%3E%3Cpath d='M1 1h73v73H1z'/%3E%3Cpath d='M8 8h59v59H8z'/%3E%3Cpath d='M8 8h16v16H8zM51 8h16v16H51zM51 51h16v16H51zM8 51h16v16H8z'/%3E%3C/g%3E%3Cg fill='%23B88846'%3E%3Ccircle cx='16' cy='16' r='2'/%3E%3Ccircle cx='59' cy='16' r='2'/%3E%3Ccircle cx='59' cy='59' r='2'/%3E%3Ccircle cx='16' cy='59' r='2'/%3E%3C/g%3E%3C/svg%3E")
+    25;
 }
 
 .imgLogo {
@@ -27,19 +42,77 @@
 .introblock {
   display: flex;
   flex-direction: row;
+  margin-left: 56px;
 }
 
 .cider-header {
   font-size: 50px;
   margin-top: 22px;
   color: #de703c;
+  font-family: "Monoton", cursive;
+  text-shadow: 4px solid black;
+  text-decoration: overline;
 }
 .right-aligned {
-  display: flex;
-  justify-content: flex-end;
+  display: inline-block;
+  margin-left: 80px;
+  margin-top: 20px;
 }
 .endingblock {
   position: relative;
   left: 0;
   bottom: 0;
+  width: fit-content;
+  padding-left: 5px;
+  padding-right: 5px;
+  border: 25px solid black;
+  background-color: #e7f1f9;
+  border-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='75' height='75'%3E%3Cg fill='none' stroke='%23B88846' stroke-width='2'%3E%3Cpath d='M1 1h73v73H1z'/%3E%3Cpath d='M8 8h59v59H8z'/%3E%3Cpath d='M8 8h16v16H8zM51 8h16v16H51zM51 51h16v16H51zM8 51h16v16H8z'/%3E%3C/g%3E%3Cg fill='%23B88846'%3E%3Ccircle cx='16' cy='16' r='2'/%3E%3Ccircle cx='59' cy='16' r='2'/%3E%3Ccircle cx='59' cy='59' r='2'/%3E%3Ccircle cx='16' cy='59' r='2'/%3E%3C/g%3E%3C/svg%3E")
+    25;
+  font-family: "Monoton", cursive;
+}
+.guests {
+  border: 25px solid black;
+  background-color: #e7f1f9;
+  border-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='75' height='75'%3E%3Cg fill='none' stroke='%23B88846' stroke-width='2'%3E%3Cpath d='M1 1h73v73H1z'/%3E%3Cpath d='M8 8h59v59H8z'/%3E%3Cpath d='M8 8h16v16H8zM51 8h16v16H51zM51 51h16v16H51zM8 51h16v16H8z'/%3E%3C/g%3E%3Cg fill='%23B88846'%3E%3Ccircle cx='16' cy='16' r='2'/%3E%3Ccircle cx='59' cy='16' r='2'/%3E%3Ccircle cx='59' cy='59' r='2'/%3E%3Ccircle cx='16' cy='59' r='2'/%3E%3C/g%3E%3C/svg%3E")
+    25;
+  font-family: "Monoton", cursive;
+  color: black;
+}
+.areaServices {
+  display: flex;
+  justify-content: center;
+  border: 25px solid black;
+  background-color: #e7f1f9;
+  width: fit-content;
+  margin-left: 50px;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  border-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='75' height='75'%3E%3Cg fill='none' stroke='%23B88846' stroke-width='2'%3E%3Cpath d='M1 1h73v73H1z'/%3E%3Cpath d='M8 8h59v59H8z'/%3E%3Cpath d='M8 8h16v16H8zM51 8h16v16H51zM51 51h16v16H51zM8 51h16v16H8z'/%3E%3C/g%3E%3Cg fill='%23B88846'%3E%3Ccircle cx='16' cy='16' r='2'/%3E%3Ccircle cx='59' cy='16' r='2'/%3E%3Ccircle cx='59' cy='59' r='2'/%3E%3Ccircle cx='16' cy='59' r='2'/%3E%3C/g%3E%3C/svg%3E")
+    25;
+  font-size: 15px;
+  font-family: "Monoton", cursive;
+  margin-top: 3px;
+}
+.guest-header {
+  font-family: "Monoton", cursive;
+  font-size: 30px;
+  color: #de703c;
+  text-decoration: overline;
+}
+.section {
+  color: #de703c;
+  text-decoration: overline;
+}
+.trail-name {
+  text-decoration: underline;
+}
+.park-service {
+  color: #de703c;
+  font-size: 15px;
+  text-decoration: overline;
+}
+.type {
+  color: #de703c;
+  text-decoration: overline;
 }
