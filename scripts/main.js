@@ -25,4 +25,3 @@ ${guestList()}
 `;
 
 mainContainer.innerHTML = applicationHTML;
-///https://i.pinimg.com/736x/42/00/da/4200da6f68fa63d417d6a13a34a7f4c0.jpg
